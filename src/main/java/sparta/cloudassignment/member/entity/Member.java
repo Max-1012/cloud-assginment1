@@ -26,10 +26,17 @@ public class Member extends BaseEntity {
     @Column(nullable = false)
     private MbtiEnums mbti;
 
+    @Column
+    private String profileImageKey;
+
     @Builder
     public Member(String name, int age, MbtiEnums mbti) {
         this.name = name;
         this.age = age;
         this.mbti = mbti;
+    }
+
+    public void uploadMemberImage(String profileImageKey) {
+        this.profileImageKey = profileImageKey;
     }
 }
