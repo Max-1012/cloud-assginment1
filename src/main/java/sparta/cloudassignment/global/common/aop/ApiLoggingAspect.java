@@ -5,23 +5,16 @@ import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
-import tools.jackson.databind.ObjectMapper;
 
-import java.time.LocalDateTime;
 import java.util.Arrays;
 
 @Slf4j
 @Aspect // 1. "나는 스프링클러(AOP 모듈)입니다!" 선언
 @Component // 2. 스프링 컨테이너에 빈으로 등록
 public class ApiLoggingAspect {
-
-    @Autowired
-    private ObjectMapper objectMapper;
 
     // 3. Pointcut: "정확히 어느 화분에 물을 줄 건데?"
     @Around("@annotation(Logging)")
@@ -70,7 +63,6 @@ public class ApiLoggingAspect {
 
             throw e;
         }
-//        long end = System.currentTimeMillis();
 
 
     }
