@@ -40,7 +40,7 @@ dependencies {
 
     // AWS
     implementation 'io.awspring.cloud:spring-cloud-aws-starter-parameter-store'
-//    implementation 'io.awspring.cloud:spring-cloud-aws-starter-s3'
+    implementation 'io.awspring.cloud:spring-cloud-aws-starter-s3'
 
     // DB
     runtimeOnly 'com.h2database:h2'

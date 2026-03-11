@@ -26,6 +26,7 @@ public class MemberService {
 
     }
 
+    @Transactional
     public GetMemberResponse saveMember(CreateMemberRequest request) {
         Member savedMember = memberRepository.save(Member.builder()
                 .name(request.name())
