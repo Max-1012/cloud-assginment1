@@ -38,7 +38,7 @@ IAM ROLE : EC2ParameterStoreAccess
 <img src="image/lv3_S3_Access_Policy.png">
 
 ### EC2에 IAM Role 연결 확인
-<img src="image/EC2_IAM_ROLE_Assginment_Check.png">
+<img src="image/lv3_EC2_IAM_ROLE_Assginment_Check.png">
 
 ### API 요구사항 확인
 ```POST /api/members/{id}/profile-image```

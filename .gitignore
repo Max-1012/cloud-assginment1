@@ -37,9 +37,9 @@ out/
 .vscode/
 
 # application config
-application-prod.properties
+#application-prod.properties
 #application-prod.yml
-application-local.properties
+#application-local.properties
 #application-local.yml
 
 # logs
